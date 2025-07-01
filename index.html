@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalith Srinivas - Full Stack Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">Lalith Srinivas</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <i class="fas fa-bars menu" id="menu"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="parallax-bg" id="parallaxBg"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Lalith Srinivas</h1>
+            <p class="hero-subtitle">Future Full Stack Developer | Passionate Learner</p>
+            <p class="hero-description">
+                Crafting digital experiences with clean code and creative solutions.
+                Currently mastering the art of full-stack development.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Hire Me</a>
+                <a href="#projects" class="btn btn-secondary">View My Work</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator" onclick="scrollToSection('about')">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <p class="section-subtitle fade-in">Passionate about creating innovative solutions</p>
+
+            <div class="about-content">
+                <div class="about-text slide-left">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Hi, I'm Lalith Srinivas</h3>
+                    <p>
+                        I'm currently pursuing my BTech in Information Technology at SVCE, Tirupati with a passion for
+                        building impactful digital experiences. I'm on a journey to become a Full Stack Web Developer,
+                        with a strong interest in integrating AI into web applications. Right now, I'm focusing on
+                        sharpening my HTML, CSS, and JavaScript skills, and actively working on projects to improve my
+                        frontend and backend development capabilities.
+                    </p>
+                    <p>
+                        I enjoy solving real-world problems through code, and I'm always open to learning new tools and
+                        technologies. I'm also seeking opportunities to gain industry experience through internships and
+                        collaborations. Let's connect and grow together in tech!
+                    </p>
+                </div>
+
+                <div class="about-image slide-right">
+                    <img src="me.jpg" alt="Lalith Srinivas">
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item scale-in">
+                    <div class="stat-icon"><i class="fas fa-code"></i></div>
+                    <h4>Clean Code</h4>
+                    <p>Writing maintainable code</p>
+                </div>
+                <div class="stat-item scale-in">
+                    <div class="stat-icon"><i class="fas fa-bullseye"></i></div>
+                    <h4>Goal Oriented</h4>
+                    <p>Focused on results</p>
+                </div>
+                <div class="stat-item scale-in">
+                    <div class="stat-icon"><i class="fas fa-bolt"></i></div>
+                    <h4>Fast Learner</h4>
+                    <p>Adapting to new tech</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <p class="section-subtitle fade-in">
+                Here are some of my recent projects that showcase my skills and passion for development.
+            </p>
+
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://lalith-srinivas.github.io/netflix-clone/" class="project-link"><i
+                                    class="fab fa-github"></i> GitHub</a>
+                            <a href="https://redscreenx.netlify.app/" class="project-link"><i
+                                    class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Netflix Clone </h3>
+                        <p class="project-description">
+                            A responsive front-end Netflix clone built using HTML, CSS, and JavaScript. This project
+                            replicates the design and user experience of Netflix's login, homepage, and browsing
+                            interface.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://lalith-srinivas.github.io/joke-app/" class="project-link"><i
+                                    class="fab fa-github"></i> GitHub</a>
+                            <a href="https://laughhub.netlify.app/" class="project-link"><i
+                                    class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Joke Generator App</h3>
+                        <p class="project-description">
+                            A simple and fun web app that fetches random jokes from a public API using JavaScript and
+                            displays them on the screen.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://lalith-srinivas.github.io/product-page-oldmoney/" class="project-link"><i
+                                    class="fab fa-github"></i> GitHub</a>
+                            <a href="https://oldmoney-fashion.netlify.app/" class="project-link"><i
+                                    class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Old Money – Fashion Product Page</h3>
+                        <p class="project-description">
+                            A fully functional and responsive fashion product page.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">localStorage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://lalith-srinivas.github.io/surya-collections/" class="project-link"><i
+                                    class="fab fa-github"></i> GitHub</a>
+                            <a href="https://surya-collections.netlify.app/" class="project-link"><i
+                                    class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Surya Collections </h3>
+                        <p class="project-description">
+                            A beautiful jewelry shopping website where users can browse items and place orders. The site
+                            is fully responsive and features a working order form with email functionality.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title fade-in">Technical Skills</h2>
+            <p class="section-subtitle fade-in">
+                Here are the technologies and tools I work with to bring ideas to life.
+            </p>
+
+            <div class="skills-grid">
+                <div class="skill-item slide-left">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML/CSS</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item slide-right">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item slide-left">
+                    <div class="skill-header">
+                        <span class="skill-name">Git & GitHub</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item slide-right">
+                    <div class="skill-header">
+                        <span class="skill-name">Responsive webpages</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item slide-left">
+                    <div class="skill-header">
+                        <span class="skill-name">Communication</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item slide-right">
+                    <div class="skill-header">
+                        <span class="skill-name">Problem Solving</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="section resume" id="resume">
+        <div class="container">
+            <h2 class="section-title fade-in">Resume & Achievements</h2>
+            <p class="section-subtitle fade-in">
+                My journey in technology and professional development
+            </p>
+
+            <div class="resume-content">
+                <div class="achievements">
+                    <div class="achievement-item scale-in">
+                        <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                        <p>Bachelor's in Information Technology<br>Currently pursuing with focus on Full Stack
+                            Development</p>
+                    </div>
+                    <div class="achievement-item scale-in">
+                        <h4><i class="fas fa-certificate"></i> Certifications</h4>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="achievement-item scale-in">
+                        <h4><i class="fas fa-trophy"></i> Achievements</h4>
+                        <p>Dean's List Student<br>AWS cloud Participant</p>
+                    </div>
+                </div>
+
+                <a href="resume1.pdf" class="btn btn-primary fade-in" style="margin-top: 2rem;">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Let's Build Together</h2>
+            <p class="section-subtitle fade-in">
+                Ready to start your next project? I'd love to hear from you and discuss how we can bring your ideas to
+                life.
+            </p>
+
+            <div class="contact-content">
+                <div class="contact-info slide-left">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>pattemlalith1267@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9989831499</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Andhra Pradesh, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form slide-right" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="user_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="user_email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div id="form-message"></div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/Lalith-Srinivas" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="http://www.linkedin.com/in/lalith-pattem-81888a32b" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:pattemlalith1267@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.instagram.com/lalith_1267_/" class="social-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Lalith Srinivas. Made with <i class="fas fa-heart" style="color: #e53e3e;"></i> All rights
+                reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "NEpD3ujdTLO2yNDZZ",
+      });
+   })();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("NEpD3ujdTLO2yNDZZ");
+
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_sc98lvp", "template_6yf3v91", this)
+      .then(() => {
+        document.getElementById("form-message").innerText = "Message sent successfully!";
+        alert("Thank You for sending Message");
+        this.reset();
+      }, (error) => {
+        document.getElementById("form-message").innerText = "Failed to send message.";
+        console.error(error);
+      });
+  });
+</script>
+</body>
+
+</html>
